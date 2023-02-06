@@ -30,7 +30,7 @@
                                     <tr>
                                         <td class="text-center">{{$post->nama}}</td>
                                         <td>
-                                            <img src="{{Storage :: url('public/posts/').$post->image}}" class="rounded" style="width: 100 px" >
+                                            <img src="{{Storage :: url('public/posts/').$post->gambar}}" class="rounded" style="width: 100px" >
                                         </td>
                                         <td>{!! $post->keterangan !!}</td>
                                         <td class="text-center">
