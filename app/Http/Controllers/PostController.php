@@ -86,4 +86,17 @@ class PostController extends Controller
             return redirect()->route('posts.index')->with(['success' => "Tersimpan"]);
         }
 
+    //delete
+    public function destroy(Post $post)
+    {
+        //hapus gambar
+        Storage::delete('public/posts/'.$post->image);
+
+        //hapus post
+        $post->delete();
+
+        //Redirect halaman
+        return redirect()->route('posts.index')->with(['success'=> 'Penghapusan berhasil']);
+    }
+
 }
