@@ -4,3 +4,5 @@
 ## About
 Sistem ini merupakan sistem crud(create update delete) menggunakan Laravel. Silahkan di download dan anda kembangkan.
 jangan lupa star. :)
+
+Terimakasih
